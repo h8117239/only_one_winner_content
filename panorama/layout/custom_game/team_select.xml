@@ -21,7 +21,7 @@
 						<Image id="TeamListLockedIcon" src="file://{images}/control_icons/lock_small.png" />
 					</Panel>
 					<Panel id="TeamsListRoot" />
-					<Panel id="HardSelectDropPan">
+<!-- 					<Panel id="HardSelectDropPan">
 					<Label text="#hard_select" id="HardSelect"/>
 
 					<DropDown id="HardSelectDrop" oninputsubmit="OnHardLevelSelect()" >
@@ -33,7 +33,7 @@
                   		<Label text="#Hard6" id="hard6"/>
                   		<Label text="#Hard7" id="hard7"/> 
                 	</DropDown>	
-                	</Panel>
+                	</Panel> -->
 					<Button id="ShuffleTeamAssignmentButton" onactivate="OnShufflePlayersPressed()">
 						<Label text="#custom_game_team_select_shuffle" />
 						<Image src="file://{images}/control_icons/shuffle.psd" />

@@ -1,9 +1,19 @@
 <root>
 	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
 		<include src="file://{resources}/styles/custom_game/custom_loading_screen.css"/>
 	</styles>
-	<Panel>
-		<!-- loading的图片 png,psd都是可以的 -->
-		<Image id="ix" class="imageSize" src="file://{images}/custom_game/loading.jpg"/>
+
+	<Panel class="LoadingScreenRoot">
+		<Panel id="Background">
+<!-- 			<Panel id="Tiny" />
+			<Panel id="TPGlow" /> -->
+		</Panel>
+		<Panel id="Title">
+			<Label id="Conquest" class="TitleFont" text="#addon_game_name" />
+		</Panel>
 	</Panel>
+
 </root>
+
+

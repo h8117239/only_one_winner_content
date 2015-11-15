@@ -203,6 +203,12 @@ function OnGameContinue( msg )
 	$.Schedule( 3, ClearItemSpawnMessage );
 }
 
+function PingMinimapAtLocation( msg )
+{
+	GameUI.PingMinimapAtLocation( msg.pos );				
+	$.Schedule( 3, ClearItemSpawnMessage );
+}
+
 (function () {
 	// GameEvents.Subscribe( "item_will_spawn", OnItemWillSpawn );
 	// GameEvents.Subscribe( "item_has_spawned", OnItemHasSpawned );
@@ -213,6 +219,7 @@ function OnGameContinue( msg )
     GameEvents.Subscribe( "building_change", OnBuildingExchanged );
     GameEvents.Subscribe( "game_round_end", OnGameRoundEnd );
     GameEvents.Subscribe( "game_continue", OnGameContinue );
+    GameEvents.Subscribe( "ping_minimap", PingMinimapAtLocation );
     // GameEvents.Subscribe( "building_changing", OnBuildingExchanged );
 })();
 
