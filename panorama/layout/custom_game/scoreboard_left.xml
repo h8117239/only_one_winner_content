@@ -1,12 +1,12 @@
 <root>
 	<styles>
-		<include src="file://{resources}/styles/dotastyles.css" />
+		<!-- <include src="file://{resources}/styles/dotastyles.css" /> -->
 		<include src="file://{resources}/styles/custom_game/scoreboard.css" />
 	</styles>
 	<scripts>
 		<include src="file://{resources}/scripts/custom_game/scoreboard.js" />
 	</scripts>
-	<Panel class="ScoreboardLeft">
+<!-- 	<Panel class="ScoreboardLeft">
 				<Panel class="VictoryPanel">
 			<Label id="Difficulty" text="#hard_lvl" />
 			<Label id="Difficulty_Detail" text="" />
@@ -15,6 +15,6 @@
 			<Label id="Goal" text="#Goal" />
 			<Label id="VictoryPoints" text="999" />
 		</Panel>
-	</Panel>
+	</Panel> -->
 </root>
 

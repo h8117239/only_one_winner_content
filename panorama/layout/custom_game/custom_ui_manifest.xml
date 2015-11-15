@@ -3,8 +3,8 @@
 		GameUI.CustomUIConfig().multiteam_top_scoreboard =
 		{
 			reorder_team_scores: true,
-			LeftInjectXMLFile: "file://{resources}/layout/custom_game/overthrow_scoreboard_left.xml",
-			TeamOverlayXMLFile: "file://{resources}/layout/custom_game/overthrow_scoreboard_team_overlay.xml"
+			LeftInjectXMLFile: "file://{resources}/layout/custom_game/scoreboard_left.xml",
+			TeamOverlayXMLFile: "file://{resources}/layout/custom_game/scoreboard_team_overlay.xml"
 		};
 
 		GameUI.CustomUIConfig().team_logo_xml = "file://{resources}/layout/custom_game/overthrow_team_icon.xml";

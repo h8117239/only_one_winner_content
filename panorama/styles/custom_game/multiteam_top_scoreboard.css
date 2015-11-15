@@ -348,3 +348,39 @@
 {
     visibility: visible;
 }
+
+#ScoreboardCurrentTime
+{
+	min-width: 46px;
+	padding-top: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+	color: #6f4d00;
+	margin-top: -8px;
+	horizontal-align: center;
+	text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-overflow: clip;
+
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #E9D048 ), color-stop( 0.5, #ffffff), color-stop( 0.5, #E3C948 ), to( #D7B129 ) );
+	box-shadow: #60000Caa -2px -2px 4px 4px;
+	border-radius: 4px;
+}
+
+/*#ScoreboardTeam
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	flow-children: right;
+}*/
+
+#_dynamic_team_2
+{
+	horizontal-align: left;
+}
+
+#_dynamic_team_3
+{
+	horizontal-align: right;
+}
