@@ -23,7 +23,7 @@ function OnLeaveTeamPressed()
 function OnHardLevelSelect()
 {
 	// var level = $( "#HardSelectDrop" ).selectedIndex;
-	GameEvents.SendCustomGameEventToServer( "OnHardLevelSelect",  {table: $( "#HardSelectDrop" ).GetSelected().id, str:"JavaScript"} );
+	// GameEvents.SendCustomGameEventToServer( "OnHardLevelSelect",  {table: $( "#HardSelectDrop" ).GetSelected().id, str:"JavaScript"} );
 }
 //--------------------------------------------------------------------------------------------------
 // Handler for when the Lock and Start button is pressed
@@ -165,7 +165,8 @@ function UpdateTeamPanel( teamPanel )
 	for ( var i = teamPlayers.length; i < nNumPlayerSlots; ++i )
 	{
 		var playerSlot = FindPlayerSlotInTeamPanel( teamPanel, i );
-		if ( playerSlot.GetChildCount() == 0 )
+
+		if (  playerSlot!=null && playerSlot.GetChildCount() == 0 )
 		{
 			var empty_slot = $.CreatePanel( "Panel", playerSlot, "player_root" );
 			empty_slot.BLoadLayout( "file://{resources}/layout/custom_game/team_select_empty_slot.xml", false, false );

@@ -349,17 +349,30 @@
     visibility: visible;
 }
 
+#ScoreboardCenter
+{
+/*	flow-children: down;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("s2r://panorama/images/custom_game/scoreboard_center_wedge_psd.vtex");
+	horizontal-align: left;
+	width: 100px;
+	height: 62px;
+	margin-top: -2px;*/
+}
+
 #ScoreboardCurrentTime
 {
-	min-width: 46px;
+	min-width: 42px;
 	padding-top: 10px;
-	padding-left: 2px;
+	padding-left: 0px;
 	padding-right: 2px;
 	color: #6f4d00;
 	margin-top: -8px;
-	horizontal-align: center;
+	horizontal-align: right;
 	text-align: center;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: bold;
     text-overflow: clip;
 
