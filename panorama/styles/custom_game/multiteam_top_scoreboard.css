@@ -351,15 +351,15 @@
 
 #ScoreboardCenter
 {
-/*	flow-children: down;
+	flow-children: down;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url("s2r://panorama/images/custom_game/scoreboard_center_wedge_psd.vtex");
+    background-image: url("file://{images}/custom_game/goal_logo.psd");
 	horizontal-align: left;
 	width: 100px;
 	height: 62px;
-	margin-top: -2px;*/
+	margin-top: -2px;
 }
 
 #ScoreboardCurrentTime
