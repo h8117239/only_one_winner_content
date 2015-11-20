@@ -16,14 +16,15 @@
 
   <Panel hittest="false" class="CustomHudRoot">
 	<Panel hittest="false" id="TopBarScoreboard">
+
 		<Panel hittest="false" id="ScoreboardContainer">
+					<Panel id="ScoreboardCenter">
+		<Label id="AddonName" text="#addonname" />
+		<Label id="ScoreboardCurrentTime" class="MonoNumbersFont" text="" />
+		</Panel>
 			<Panel hittest="false" id="LeftInjectXMLFile" />
 			<Panel hittest="false" id="MultiteamScoreboard" />
 			<Panel hittest="false" id="RightInjectXMLFile" />
-		</Panel>
-		<Panel hittest="false" id="ScoreboardCenter">
-			<!-- <Label hittest="false" id="ScoreboardGoal" class="MonoNumbersFont" text="" /> -->
-			<Label hittest="false" id="ScoreboardCurrentTime" class="MonoNumbersFont" text="" />
 		</Panel>
 	  </Panel>
   </Panel>

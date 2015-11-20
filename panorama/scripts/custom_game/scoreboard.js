@@ -64,7 +64,7 @@ function HardChange(msg)
 {
 	// $( "#AlertMessage_Chest" ).html = true;
 	// $( "#AlertMessage_Delivery" ).html = true;
-	$( "#Difficulty_Detail" ).text = $.Localize( "#hard_"+msg.hard );
+	// $( "#Difficulty_Detail" ).text = $.Localize( "#hard_"+msg.hard );
 	// $( "#AlertMessage_Delivery" ).text = $.Localize( "#BeOccupied"+msg.team );
 }
 

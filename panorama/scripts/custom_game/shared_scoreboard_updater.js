@@ -209,11 +209,13 @@ function _ScoreboardUpdater_UpdateTeamPanel( scoreboardConfig, containerPanel, t
 		teamPanel.BLoadLayout( scoreboardConfig.teamXmlName, false, false );
 
 		var logo_xml = GameUI.CustomUIConfig().team_logo_xml;
+		$.Msg( "UpdateTeamPanel.logo_xml: ", logo_xml );
 		if ( logo_xml )
 		{
 			var teamLogoPanel = teamPanel.FindChildInLayoutFile( "TeamLogo" );
 			if ( teamLogoPanel )
 			{
+				$.Msg( "UpdateTeamPanel.teamId: ", teamId );
 				teamLogoPanel.SetAttributeInt( "team_id", teamId );
 				teamLogoPanel.BLoadLayout( logo_xml, false, false );
 			}
@@ -290,6 +292,7 @@ function _ScoreboardUpdater_UpdateTeamPanel( scoreboardConfig, containerPanel, t
 
 function UpdateTimer()
 {
+
 	var timerValue = Game.GetDOTATime( false, true );
 	var timerText = "";
 
@@ -313,8 +316,8 @@ function UpdateTimer()
 	}
 
 	timerText += sec;
-
 	var timePanel = $( "#ScoreboardCurrentTime" );
+	// var timePanel = $( "#CurrentTime" );
 	if ( timePanel )
 	{
 		timePanel.text = timerText;

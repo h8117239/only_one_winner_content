@@ -351,34 +351,39 @@
 
 #ScoreboardCenter
 {
-	flow-children: down;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: url("file://{images}/custom_game/goal_logo.psd");
-	horizontal-align: left;
+    flow-children: down;
 	width: 100px;
-	height: 62px;
-	margin-top: -2px;
+	height: 100px;
+
+	background-image: url("file://{images}/custom_game/goal_logo.psd");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100% 100%;
 }
+
 
 #ScoreboardCurrentTime
 {
-	min-width: 42px;
-	padding-top: 10px;
-	padding-left: 0px;
-	padding-right: 2px;
-	color: #6f4d00;
-	margin-top: -8px;
-	horizontal-align: right;
-	text-align: center;
-    font-size: 26px;
+    margin-top: 3px;
+    font-size: 28px;
     font-weight: bold;
+    color: #9e7305;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
     text-overflow: clip;
+}
 
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #E9D048 ), color-stop( 0.5, #ffffff), color-stop( 0.5, #E3C948 ), to( #D7B129 ) );
-	box-shadow: #60000Caa -2px -2px 4px 4px;
-	border-radius: 4px;
+#AddonName
+{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #9e7305;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    text-overflow: clip;
 }
 
 /*#ScoreboardTeam
