@@ -80,15 +80,19 @@ function AddNotification(msg, panel) {
     notification.heroimagestyle = msg.imagestyle || "icon";
     notification.heroname = msg.hero
     notification.hittest = false;
+    notification.AddClass('ImageStyle');
   } else if (msg.image != null){
     notification.SetImage(msg.image);
     notification.hittest = false;
+    notification.AddClass('ImageStyle');
   } else if (msg.ability != null){
     notification.abilityname = msg.ability
     notification.hittest = false;
+    notification.AddClass('ImageStyle');
   } else if (msg.item != null){
     notification.itemname = msg.item
     notification.hittest = false;
+    notification.AddClass('ImageStyle');
   } else{
     notification.html = true;
     var text = msg.text || "No Text provided";

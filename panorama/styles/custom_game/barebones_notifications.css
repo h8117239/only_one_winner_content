@@ -63,6 +63,16 @@
     text-align: center;
 }
 
+.ImageStyle
+{
+    height: 68px;
+    width: 82px;
+    /*margin: 4px;*/
+    border: 2px solid #5e686966;
+    background-color: #292e2e;
+    margin: 0px;
+}
+
 .HeroImage
 {
     vertical-align: center;
